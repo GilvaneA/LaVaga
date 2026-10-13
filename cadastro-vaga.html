@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La Vaga — Cadastro de vaga</title>
+<style>
+:root{--teal:#0f766e;--mint:#e0f2f1;--ink:#1f2937;--muted:#64748b;--line:#dce7e5;--bg:#f5f8f8;--white:#fff;--blue:#eff6ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Segoe UI",Arial,sans-serif}
+header{height:74px;background:white;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;gap:12px}
+.brand{display:flex;align-items:center;gap:11px;font-size:27px;font-weight:800;color:var(--teal)}.mark{height:40px;width:40px;border-radius:12px;background:var(--teal);color:white;display:grid;place-items:center;font-size:16px}.tag{font-size:16px;color:var(--muted);font-weight:500}
+.shell{display:grid;grid-template-columns:220px 1fr;min-height:calc(100vh - 74px)}aside{background:white;border-right:1px solid var(--line);padding:20px 13px}.company{padding:12px;background:#f0fdfa;border-radius:10px;color:var(--teal);font-weight:700;font-size:16px;margin-bottom:18px}.nav{padding:12px;border-radius:9px;margin:4px 0;color:#475569;font-size:16px}.nav.active{background:var(--mint);color:var(--teal);font-weight:800}
+main{width:100%;max-width:1250px;padding:28px;margin:auto}.crumb{font-size:16px;color:var(--muted);margin-bottom:12px}h1{font-size:28px;margin:0 0 8px;letter-spacing:-.5px}h2{font-size:18px;margin:0}.intro{color:var(--muted);line-height:1.5;margin-bottom:22px}.grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:18px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px}.panelhead{display:flex;align-items:center;gap:10px;margin-bottom:18px}.icon{height:34px;width:34px;border-radius:10px;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-weight:900;font-size:18px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field.full{grid-column:1/-1}.field label{display:block;font-size:16px;font-weight:800;color:#475569;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;border:1px solid #cbd5e1;border-radius:8px;padding:11px 12px;font:inherit;font-size:16px;background:white;color:var(--ink)}.field textarea{min-height:92px;resize:vertical}.field small{display:block;font-size:16px;color:var(--muted);margin-top:5px}.checkrow{display:flex;align-items:flex-start;gap:9px;font-size:16px;color:#475569;line-height:1.5}.checkrow input{margin-top:3px;accent-color:var(--teal)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{border:1px solid var(--teal);border-radius:9px;padding:11px 15px;background:white;color:var(--teal);font-weight:800;cursor:pointer}.btn.primary{background:var(--teal);color:white}.btn:hover{filter:brightness(.97)}.preview{position:sticky;top:18px}.preview-label{font-size:16px;text-transform:uppercase;letter-spacing:.7px;font-weight:800;color:var(--teal);margin-bottom:12px}.preview h3{font-size:21px;margin:0 0 8px}.pill{display:inline-block;padding:5px 9px;background:#f1f5f9;color:#475569;border-radius:99px;font-size:16px;font-weight:700;margin:0 5px 8px 0}.preview p{font-size:16px;color:#475569;line-height:1.6}.preview ul{font-size:16px;color:#475569;padding-left:20px;line-height:1.7}.rule{height:1px;background:var(--line);margin:14px 0}.notice{padding:13px;background:var(--blue);border:1px solid #bfdbfe;color:#1e40af;border-radius:10px;font-size:16px;line-height:1.5;margin-top:14px}.success{display:none;padding:13px;border:1px solid #86efac;background:#f0fdf4;color:#166534;border-radius:10px;font-size:16px;margin-top:14px}.required{color:#b91c1c}.muted{color:var(--muted)}@media(max-width:900px){.shell{grid-template-columns:1fr}aside{display:none}main{padding:16px}.grid{grid-template-columns:1fr}.preview{position:static}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}header{padding:0 16px}.account{display:none}h1{font-size:24px}}@media print{header,aside,.formpanel,.actions{display:none!important}.shell{display:block}.grid{display:block}main{padding:0}.preview{position:static}}
+</style></head>
+<body>
+<header><div class="brand"><div class="mark">LV</div><div>La Vaga<div class="tag">Conectando pessoas a oportunidades.</div></div></div><div class="account" style="font-size:16px;color:#475569">Empresa Exemplo　⌄</div></header>
+<div class="shell"><aside><div class="company">▣ &nbsp; Empresa Exemplo<br><span style="font-size:16px;font-weight:500">Área da empresa · Demonstração</span></div><div class="nav">▥ &nbsp; Painel</div><div class="nav active">⊕ &nbsp; Publicar vaga</div><div class="nav">♙ &nbsp; Candidatos</div><div class="nav">▱ &nbsp; Minhas vagas</div><div class="nav">⇄ &nbsp; Comparar perfis</div><div class="nav">▤ &nbsp; Relatórios</div><div class="nav">⚙ &nbsp; Configurações</div></aside>
+<main><div class="crumb">Área da empresa › Minhas vagas › Nova vaga</div><h1>Cadastre uma oportunidade</h1><p class="intro">Informe os detalhes da vaga para que os candidatos entendam a oportunidade e a La Vaga possa organizar os requisitos para comparação de perfil.</p>
+<div class="grid"><div class="formpanel">
+<form id="jobForm">
+<div class="panel"><div class="panelhead"><div class="icon">▣</div><h2>Informações da vaga</h2></div>
+<div class="fields">
+<div class="field full"><label for="title">Título da vaga <span class="required">*</span></label><input id="title" required value="Operador de Produção" placeholder="Ex.: Operador de Produção"></div>
+<div class="field"><label for="area">Área profissional <span class="required">*</span></label><select id="area" required><option>Produção industrial</option><option>Administrativo</option><option>Comercial e vendas</option><option>Atendimento ao cliente</option><option>Logística</option><option>Manutenção</option><option>Tecnologia</option><option>Outra</option></select></div>
+<div class="field"><label for="contract">Tipo de contratação</label><select id="contract"><option>CLT</option><option>Temporário</option><option>Estágio</option><option>Aprendiz</option><option>Prestação de serviços</option><option>A combinar</option></select></div>
+<div class="field"><label for="city">Cidade <span class="required">*</span></label><input id="city" required value="Marechal Cândido Rondon - PR"></div>
+<div class="field"><label for="workplace">Local de trabalho</label><select id="workplace"><option>Presencial</option><option>Híbrido</option><option>Remoto</option><option>A combinar</option></select></div>
+<div class="field"><label for="hours">Horário / turno</label><input id="hours" placeholder="Ex.: Segunda a sexta, 08h às 17h"></div>
+<div class="field"><label for="salary">Salário ou faixa salarial</label><input id="salary" placeholder="Ex.: R$ 2.200,00 ou a combinar"></div>
+<div class="field full"><label for="description">Principais atividades <span class="required">*</span></label><textarea id="description" required placeholder="Descreva as tarefas do dia a dia.">Executar atividades operacionais conforme as orientações da equipe e os procedimentos da empresa.</textarea></div>
+<div class="field full"><label for="benefits">Benefícios</label><input id="benefits" placeholder="Ex.: vale-alimentação, transporte, plano de saúde"></div>
+</div></div>
+<div class="panel"><div class="panelhead"><div class="icon">✓</div><h2>Requisitos da vaga</h2></div>
+<div class="fields">
+<div class="field full"><label for="must">Requisitos necessários <span class="required">*</span></label><textarea id="must" required>Atenção às instruções
+Organização
+Disponibilidade para o horário informado</textarea><small>Digite um requisito por linha. Seja claro e evite exigências que não sejam necessárias ao trabalho.</small></div>
+<div class="field full"><label for="nice">Requisitos desejáveis</label><textarea id="nice">Experiência industrial</textarea><small>Requisitos desejáveis são diferenciais, não devem ser tratados automaticamente como eliminatórios.</small></div>
+<div class="field full"><label for="evidence">Como a pessoa pode demonstrar essas capacidades?</label><textarea id="evidence" placeholder="Ex.: experiência anterior, curso, atividade prática ou exemplo de trabalho.">Experiências operacionais anteriores e exemplos de atividades realizadas.</textarea></div>
+</div></div>
+<div class="panel"><div class="panelhead"><div class="icon">◎</div><h2>Antes de publicar</h2></div>
+<label class="checkrow"><input id="confirm" type="checkbox" required><span>Confirmo que as informações são corretas e que os requisitos estão relacionados às atividades da vaga.</span></label>
+<div class="actions"><button type="submit" class="btn primary">Salvar vaga de demonstração</button><button type="button" class="btn" onclick="window.print()">Imprimir prévia</button><button type="button" class="btn" onclick="resetForm()">Restaurar exemplo</button></div>
+<div class="success" id="success">✓ Vaga de demonstração salva nesta página. Nenhuma vaga foi publicada na internet.</div>
+</div>
+</form></div>
+<div class="preview"><div class="panel"><div class="preview-label">Prévia da vaga · atualização ao digitar</div><h3 id="pTitle">Operador de Produção</h3><span class="pill" id="pArea">Produção industrial</span><span class="pill" id="pContract">CLT</span><p id="pLocation">⌖ Marechal Cândido Rondon - PR · Presencial</p><p id="pHours">◷ Horário a combinar</p><p id="pSalary">Salário a combinar</p><div class="rule"></div><strong style="font-size:16px">Principais atividades</strong><p id="pDescription"></p><strong style="font-size:16px">Requisitos necessários</strong><ul id="pMust"></ul><strong style="font-size:16px">Diferenciais desejáveis</strong><ul id="pNice"></ul><div class="rule"></div><p id="pBenefits">Benefícios não informados.</p><div class="notice"><strong>Importante:</strong> esta tela é um protótipo local. Salvar registra apenas a confirmação visual nesta página; não cria conta, não envia dados e não publica uma vaga real.</div></div></div>
+</div></main></div>
+<script>
+const $=id=>document.getElementById(id);
+const fields=["title","area","contract","city","workplace","hours","salary","description","must","nice","evidence","benefits"];
+function list(text){return text.split(/\n/).map(s=>s.trim()).filter(Boolean)}
+function safe(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function refresh(){
+$("pTitle").textContent=$("title").value||"Título da vaga";
+$("pArea").textContent=$("area").value;$("pContract").textContent=$("contract").value;
+$("pLocation").textContent="⌖ "+($("city").value||"Cidade não informada")+" · "+$("workplace").value;
+$("pHours").textContent="◷ "+($("hours").value||"Horário a combinar");
+$("pSalary").textContent=$("salary").value||"Salário a combinar";
+$("pDescription").textContent=$("description").value||"Atividades não informadas.";
+$("pMust").innerHTML=list($("must").value).map(x=>"<li>"+safe(x)+"</li>").join("")||"<li>Não informado</li>";
+$("pNice").innerHTML=list($("nice").value).map(x=>"<li>"+safe(x)+"</li>").join("")||"<li>Nenhum requisito desejável informado.</li>";
+$("pBenefits").textContent=$("benefits").value?"Benefícios: "+$("benefits").value:"Benefícios não informados.";
+}
+fields.forEach(id=>$(id).addEventListener("input",refresh));
+$("jobForm").addEventListener("submit",e=>{e.preventDefault();refresh();$("success").style.display="block";$("success").scrollIntoView({behavior:"smooth",block:"nearest"})});
+function resetForm(){$("jobForm").reset();$("title").value="Operador de Produção";$("city").value="Marechal Cândido Rondon - PR";$("description").value="Executar atividades operacionais conforme as orientações da equipe e os procedimentos da empresa.";$("must").value="Atenção às instruções\nOrganização\nDisponibilidade para o horário informado";$("nice").value="Experiência industrial";$("evidence").value="Experiências operacionais anteriores e exemplos de atividades realizadas.";$("success").style.display="none";refresh()}
+refresh();
+</script></body></html>

@@ -1,0 +1,20 @@
+LA VAGA — PACOTE DE INTEGRAÇÃO
+
+Conteúdo:
+- index.html: página institucional adaptada para La Vaga, com a identidade visual e o diamante preservados.
+- cadastro-vaga.html: tela de cadastro de vagas.
+- perfil-profissional.html: tela de perfil do candidato.
+- comparacao-perfil.html: tela de comparação de requisitos e evidências.
+
+COMO TESTAR:
+1. Extraia todos os arquivos do ZIP para uma mesma pasta.
+2. Abra index.html no navegador.
+3. Navegue pelos links de demonstração para abrir as outras telas.
+
+IMPORTANTE:
+- Este pacote é uma demonstração local.
+- Os formulários não enviam dados para servidor nem criam contas reais.
+- O Google Analytics original foi omitido desta cópia para evitar assumir que a medição atual deve ser mantida sem revisão.
+- Antes de publicar, confira o caminho da imagem do diamante em images/diamante-formnex-oficial.png.
+  Se o nome real do arquivo ou da pasta for diferente, ajuste o caminho no index.html.
+- Faça backup do index.html original no GitHub antes de substituir.

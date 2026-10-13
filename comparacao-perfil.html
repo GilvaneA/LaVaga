@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Vaga — Comparação de perfil</title>
+<style>
+:root{--teal:#0f766e;--teal2:#14b8a6;--ink:#1f2937;--muted:#64748b;--line:#dce7e5;--bg:#f5f8f8;--white:#fff;--green:#dcfce7;--greenInk:#166534;--amber:#fef3c7;--amberInk:#92400e;--gray:#e2e8f0;--grayInk:#334155;--blue:#eff6ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink)}header{height:76px;background:white;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;gap:16px;position:sticky;top:0;z-index:2}.brand{display:flex;align-items:center;gap:12px;color:var(--teal);font-weight:800;font-size:28px}.brandmark{width:40px;height:40px;border-radius:12px;background:var(--teal);color:white;display:grid;place-items:center;font-size:20px}.tagline{font-size:16px;color:var(--muted);font-weight:500}.header-right{font-size:16px;color:#475569}.layout{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:calc(100vh - 76px)}aside{background:white;border-right:1px solid var(--line);padding:22px 14px}.company{padding:10px;border-radius:12px;background:#f0fdfa;color:var(--teal);font-weight:700;margin-bottom:18px}.nav{padding:11px 12px;border-radius:9px;margin:4px 0;font-size:16px;color:#475569}.nav.active{background:#dff5f1;color:var(--teal);font-weight:700}main{padding:28px;max-width:1500px;width:100%;margin:auto}.topline{display:flex;justify-content:space-between;gap:16px;align-items:start;margin-bottom:20px}.crumb{font-size:16px;color:var(--muted);margin-bottom:12px}h1{font-size:28px;margin:0 0 8px;letter-spacing:-.5px}p{margin:0;color:var(--muted);line-height:1.5}.back{border:1px solid var(--line);background:white;border-radius:9px;padding:10px 14px;color:var(--ink);font-weight:600;white-space:nowrap}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}.card{background:white;border:1px solid var(--line);border-radius:14px;padding:20px}.card.vaga{background:linear-gradient(120deg,#f0fdfa,#fff)}.card.person{background:linear-gradient(120deg,#eff6ff,#fff)}.card-title{font-size:16px;color:var(--teal);font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}.person .card-title{color:#2563eb}h2{font-size:20px;margin:0 0 10px}.detail{font-size:16px;color:#475569;margin:8px 0}.section{background:white;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px}.sectionhead{display:flex;align-items:center;gap:12px;margin-bottom:6px}.sectionhead .symbol{width:36px;height:36px;border-radius:10px;background:var(--teal);color:white;display:grid;place-items:center;font-size:20px}.sectionhead h2{margin:0}.hint{font-size:16px;color:var(--muted);margin:0 0 16px 48px}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:780px}th{background:#f1f5f9;text-align:left;font-size:16px;text-transform:uppercase;letter-spacing:.3px;color:#475569}th,td{padding:13px 12px;border:1px solid #e2e8f0;vertical-align:top;font-size:16px;line-height:1.45}td:first-child{font-weight:700;width:20%}td:nth-child(2){width:31%}td:nth-child(3){width:16%}.status{display:inline-block;border-radius:8px;padding:7px 9px;font-size:16px;font-weight:800;white-space:nowrap}.att{background:var(--green);color:var(--greenInk)}.par{background:var(--amber);color:var(--amberInk)}.non{background:var(--gray);color:var(--grayInk)}.lower{display:grid;grid-template-columns:1fr 1fr;gap:16px}.lower .section{margin-bottom:0}.strength{background:#faf5ff;border-color:#e9d5ff}.attention{background:#fff7ed;border-color:#fed7aa}.lower h3{font-size:16px;margin:0 0 10px}.lower ul{padding-left:20px;margin:0;color:#475569;font-size:16px;line-height:1.7}.important{margin-top:16px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:15px;display:flex;gap:12px;font-size:16px;color:#1e40af;line-height:1.5}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.btn{border:1px solid var(--teal);border-radius:9px;padding:10px 14px;background:white;color:var(--teal);font-weight:700;cursor:pointer}.btn.primary{background:var(--teal);color:white}.btn:hover{filter:brightness(.97)}.editgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field label{display:block;font-size:16px;font-weight:800;margin-bottom:6px;color:#475569}.field input,.field textarea,.field select{width:100%;border:1px solid #cbd5e1;border-radius:8px;padding:10px;font:inherit;font-size:16px;background:white}.field textarea{min-height:78px;resize:vertical}.editnote{font-size:16px;color:var(--muted);margin-top:12px}.toast{display:none;padding:10px;border-radius:8px;background:#dcfce7;color:#166534;font-size:16px;margin-top:10px}@media(max-width:900px){.layout{grid-template-columns:1fr}aside{display:none}main{padding:16px}.cards,.lower,.editgrid{grid-template-columns:1fr}.topline{display:block}.back{margin-top:14px}header{padding:0 16px}.header-right{display:none}h1{font-size:24px}}@media print{header,aside,.back,.actions,.editpanel{display:none!important}.layout{display:block}main{padding:0;max-width:none}.section,.card{break-inside:avoid}.cards{grid-template-columns:1fr 1fr}body{background:white}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="brandmark">LV</div><div>La Vaga<div class="tagline">Conectando pessoas a oportunidades.</div></div></div>
+  <div class="header-right">DEMONSTRAÇÃO · DADOS FICTÍCIOS</div>
+</header>
+<div class="layout">
+<aside>
+  <div class="company">▣ &nbsp; Empresa Exemplo</div>
+  <div class="nav">▥ &nbsp; Painel</div><div class="nav">⊕ &nbsp; Publicar vaga</div><div class="nav active">♙ &nbsp; Candidatos</div><div class="nav">▱ &nbsp; Minhas vagas</div><div class="nav">⇄ &nbsp; Comparar perfis</div><div class="nav">▤ &nbsp; Relatórios</div><div class="nav">⚙ &nbsp; Configurações</div>
+</aside>
+<main>
+  <div class="topline">
+    <div><div class="crumb">Candidatos › Comparação de perfil</div><h1>Comparação de perfil com a vaga</h1><p>Veja as evidências relacionadas aos requisitos. A análise apoia a avaliação, mas a decisão final é da empresa.</p></div>
+    <button class="back" onclick="window.print()">Imprimir / salvar PDF</button>
+  </div>
+  <div class="cards">
+    <div class="card vaga"><div class="card-title">▣ &nbsp; Vaga</div><h2 id="showRole">Operador de Produção</h2><div class="detail">⌖ &nbsp; Local: não especificado no exemplo</div><div class="detail">◷ &nbsp; Horário: informado pela empresa</div><div class="detail">▦ &nbsp; Setor: Produção industrial</div></div>
+    <div class="card person"><div class="card-title">♙ &nbsp; Perfil profissional</div><h2 id="showCandidate">Candidato fictício</h2><div class="detail">▣ &nbsp; Experiência em atividades operacionais</div><div class="detail">✓ &nbsp; Organização mencionada no perfil</div><div class="detail">▤ &nbsp; Disponibilidade de horário: não informada</div></div>
+  </div>
+  <div class="section">
+    <div class="sectionhead"><div class="symbol">✓</div><h2>Análise dos requisitos</h2></div>
+    <p class="hint">Cada situação deve ser sustentada pelas informações disponíveis, sem presumir competências ausentes.</p>
+    <div class="tablewrap"><table><thead><tr><th>Requisito da vaga</th><th>Evidências no perfil</th><th>Situação</th><th>Observações</th></tr></thead><tbody id="results"></tbody></table></div>
+    <div class="actions"><button class="btn primary" onclick="document.getElementById('editor').scrollIntoView({behavior:'smooth'})">Editar dados do exemplo</button><button class="btn" onclick="window.print()">Imprimir comparação</button><button class="btn" onclick="resetDemo()">Restaurar exemplo</button></div>
+  </div>
+  <div class="lower">
+    <div class="section strength"><h3>✓ &nbsp; Pontos sustentados pelo perfil</h3><ul id="strengths"></ul></div>
+    <div class="section attention"><h3>⚠ &nbsp; Pontos que precisam de confirmação</h3><ul id="attention"></ul></div>
+  </div>
+  <div class="important"><strong>ⓘ Importante</strong><span>Esta comparação utiliza apenas as informações fornecidas no exemplo. “Não comprovado” significa ausência de evidência suficiente no perfil, não ausência da capacidade. A empresa deve confirmar informações relevantes e tomar a decisão final de forma responsável.</span></div>
+  <div class="section editpanel" id="editor" style="margin-top:16px">
+    <div class="sectionhead"><div class="symbol">✎</div><h2>Editar o exemplo</h2></div>
+    <p class="hint">Altere os campos para testar a tela. Os resultados são atualizados localmente neste navegador.</p>
+    <div class="editgrid">
+      <div class="field"><label for="role">Nome da vaga</label><input id="role" value="Operador de Produção"></div>
+      <div class="field"><label for="candidate">Nome demonstrativo</label><input id="candidate" value="Candidato fictício"></div>
+      <div class="field"><label for="requirements">Requisitos (um por linha)</label><textarea id="requirements">Atenção às instruções
+Organização
+Disponibilidade para o horário informado
+Experiência industrial desejável</textarea></div>
+      <div class="field"><label for="profile">Informações do perfil</label><textarea id="profile">Experiência em atividades operacionais
+Organização
+Capacidade de seguir instruções
+Experiência industrial ainda não comprovada
+Disponibilidade de horário não informada</textarea></div>
+    </div>
+    <div class="actions"><button class="btn primary" onclick="updateDemo()">Atualizar comparação</button></div>
+    <div class="editnote">Nota do protótipo: esta demonstração usa regras simples por palavras-chave para ajudar a testar a interface. Não é um motor de seleção validado nem deve ser usado para decidir contratações reais.</div>
+    <div class="toast" id="toast">Exemplo atualizado.</div>
+  </div>
+</main>
+</div>
+<script>
+const initial={role:"Operador de Produção",candidate:"Candidato fictício",requirements:"Atenção às instruções\nOrganização\nDisponibilidade para o horário informado\nExperiência industrial desejável",profile:"Experiência em atividades operacionais\nOrganização\nCapacidade de seguir instruções\nExperiência industrial ainda não comprovada\nDisponibilidade de horário não informada"};
+function classify(req, profile){
+ const p=profile.toLowerCase(), r=req.toLowerCase();
+ if(r.includes("disponibilidade") || r.includes("horário") || r.includes("horario")){
+   if(/disponibilidade.{0,35}(confirmada|sim|disponível|disponivel|compatível|compativel)/i.test(p) || /horário.{0,25}(confirmado|compatível|compativel)/i.test(p)) return {status:"Atendido",cls:"att",evidence:"Disponibilidade/horário informado como confirmado.",note:"Confirmar se o horário corresponde ao turno real da vaga."};
+   if(/não informad|nao informad|não consta|nao consta|a confirmar|parcial/i.test(p)) return {status:"Parcial",cls:"par",evidence:"A disponibilidade não está confirmada no perfil.",note:"Perguntar ao candidato se pode cumprir o horário informado."};
+   if(/disponibilidade|horário|horario/i.test(p)) return {status:"Parcial",cls:"par",evidence:"Há menção ao tema, mas não há confirmação clara.",note:"Confirmar diretamente com o candidato."};
+ }
+ if(r.includes("organiza")){
+   if(/organiza/i.test(p)) return {status:"Atendido",cls:"att",evidence:"Organização mencionada no perfil.",note:"A informação consta no perfil; pode ser explorada na entrevista."};
+ }
+ if(r.includes("instru") || r.includes("atenção")){
+   if(/seguir instruç|seguir instruc|atenção às instru|atencao as instru/i.test(p)) return {status:"Atendido",cls:"att",evidence:"Capacidade de seguir instruções mencionada.",note:"Confirmar com exemplos concretos de atividades anteriores."};
+ }
+ if(r.includes("industrial") || r.includes("experiência") || r.includes("experiencia")){
+   if(/não comprovad|nao comprovad|não há evidência|nao ha evidencia|ainda não|ainda nao/i.test(p)) return {status:"Não comprovado",cls:"non",evidence:"O perfil não comprova experiência industrial específica.",note:"A experiência é desejável; verificar se é critério obrigatório ou diferencial."};
+   if(/experiência industrial|experiencia industrial/i.test(p)) return {status:"Atendido",cls:"att",evidence:"Experiência industrial indicada no perfil.",note:"Confirmar período, atividades e contexto da experiência."};
+   if(/atividades operacionais/i.test(p)) return {status:"Parcial",cls:"par",evidence:"Experiência operacional indicada, sem evidência específica de indústria.",note:"Pedir exemplos das atividades realizadas."};
+ }
+ const tokens=r.split(/\s+/).filter(x=>x.length>4);
+ const matched=tokens.some(t=>p.includes(t));
+ return matched?{status:"Parcial",cls:"par",evidence:"Há informação relacionada, mas precisa de confirmação.",note:"Validar a informação com o candidato."}:{status:"Não comprovado",cls:"non",evidence:"Não foi encontrada evidência explícita no perfil.",note:"Ausência de informação não significa ausência da capacidade."};
+}
+function render(){
+ const role=document.getElementById("role").value.trim()||"Vaga sem título";
+ const candidate=document.getElementById("candidate").value.trim()||"Candidato fictício";
+ const profile=document.getElementById("profile").value.trim();
+ const reqs=document.getElementById("requirements").value.split("\n").map(x=>x.trim()).filter(Boolean);
+ document.getElementById("showRole").textContent=role;
+ document.getElementById("showCandidate").textContent=candidate;
+ const rows=reqs.map(req=>({req,...classify(req,profile)}));
+ document.getElementById("results").innerHTML=rows.map(x=>`<tr><td>${esc(x.req)}</td><td>${esc(x.evidence)}</td><td><span class="status ${x.cls}">${esc(x.status)}</span></td><td>${esc(x.note)}</td></tr>`).join("");
+ const good=rows.filter(x=>x.status==="Atendido");
+ const needs=rows.filter(x=>x.status!=="Atendido");
+ document.getElementById("strengths").innerHTML=(good.length?good.map(x=>`<li>${esc(x.req)} — informação encontrada no perfil.</li>`):["Nenhum requisito foi marcado como atendido com as informações atuais."].map(esc).map(x=>`<li>${x}</li>`)).join("");
+ document.getElementById("attention").innerHTML=(needs.length?needs.map(x=>`<li>${esc(x.req)} — ${esc(x.status.toLowerCase())}.</li>`):["Nenhum ponto pendente identificado nesta comparação."].map(esc).map(x=>`<li>${x}</li>`)).join("");
+}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function updateDemo(){render();const t=document.getElementById("toast");t.style.display="block";setTimeout(()=>t.style.display="none",2600);}
+function resetDemo(){Object.entries(initial).forEach(([k,v])=>{const id={role:"role",candidate:"candidate",requirements:"requirements",profile:"profile"}[k];document.getElementById(id).value=v;});updateDemo();}
+render();
+</script>
+</body>
+</html>
